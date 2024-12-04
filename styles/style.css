@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parkinsans:wght@300..800&family=SUSE:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+ font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #004144;
+  
+ 
+   
+
+}
+
+.container {
+    margin: 0 150px;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #bae6ff;
+    border-radius: 5px;
+}
+C
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #bae6ff;
+    border-radius: 5px;
+}
+
+C
+.navigation ul,
+.button {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navigation ul,
+    .button {
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        padding: 2rem 9%;
+        left: 0;
+       
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    
+        
+    }
+    .logo {
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: 900;
+        color: #bae6ff;
+    }
+    .logo span {
+        color: #c1c7cd;
+        transform: rotate(-10deg);
+        display: inline-block;
+    
+    }
+    
+    .navigation ul , .button{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        list-style: none;
+    }
+    .navigation a {
+        text-decoration: none;
+        font-size: 24px;
+        color: #bae6ff;
+    }
+    .button button {
+        padding: 10px 40px;
+        border-radius: 15px;
+        cursor: pointer;
+        font-weight: 700;
+        border: none;
+        color: #ffff;
+    }
+    .btn1 {
+        background-color: #FF7EB6;
+    }
+    .bt2 {
+        background-color: #BE95FF;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 1rem 5%;
+        flex-wrap: wrap;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .navigation ul {
+        display: none;
+    }
+    .button {
+        display: none;
+    }
+}
