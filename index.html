@@ -3,33 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitSphere GYM</title>
+    <title>FitSphere</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <script defer src="./scripts/script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <a href="#" class="logo">Fit <span>Sphere</span></a>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <nav>
+        <ul  class="sidebar">
+            <li onclick=hideSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">FitSphere</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Memberships</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="signUp"><a  href="#">Sign Up</a></li>
+            <li class="logIn"><a  href="#">Log In</a></li>
+            <
+        </ul>
+        <ul>
+            <li><a  href="#">FitSphere</a></li>
+            <li><a class="hiddeMobile"href="#">Home</a></li>
+            <li><a class="hiddeMobile"href="#">About Us</a></li>
+            <li><a class="hiddeMobile"href="#">Services</a></li>
+            <li><a class="hiddeMobile"href="#">Memberships</a></li>
+            <li><a class="hiddeMobile"href="#">Contact Us</a></li>
+            <li class="signUp"><a class="hiddeMobile "href="#">Sign Up</a></li>
+            <li class="logIn"><a class="hiddeMobile "href="#">Log In</a></li>
+            <li class="hidde"  onclick=showSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider-item">
+                    <div class="slider-content">
+                        <h1 class="slide-subtitle">
+                            Welcome to <span><em>FitSphere</em></span> – Your Path to Peak Fitness!
+                        </h1>
+                        <h3 class="slide-title">Discover a Fitness Experience Like No Other</h3>
+                        <p class="slide-description">
+                            <em>Unleash your potential with state-of-the-art facilities, expert trainers, and a supportive community dedicated to your success.</em>
+                        </p>
+                        <a href="" class="slide-button">learn more</a>
+                    </div>
+                </div>
+ 
             </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Membership</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <ul class="button">
-                <li><button class="btn1">Sign Up</button></li>
-                <li><button class="bt2">Log In</button></li>
-            </ul>
         </div>
-    </div>
+        <section>
+            <div class="about-container">
+                <div class="about-sub">
+                    <img src="./assets/Fit Sphere.png" alt="FitSphere-Logo">
+                </div>
+                <div class="about-sub">
+                    <h2 class="about-title">About <span><em>FitSphere</em></span></h2>
+                    <p class="about-description">
+                        At FitSphere, we’re passionate about transforming lives through fitness. Founded with the vision to create a welcoming and inspiring space for individuals of all fitness levels, our mission is to empower you to achieve your personal health and wellness goals.
+                    </p> <br>
+                    <p class="about-description">We believe that fitness is more than just physical strength—it’s about building confidence, resilience, and a sense of community. With state-of-the-art facilities, expert trainers, and personalized programs, we’re here to guide you on every step of your journey.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="title-service">
+                Our Services
+            </h2>
+            <p class="subtitle-service"><em>FitSphere is dedicated to offering personalized fitness experiences for every individual</em></p>
+            
+            
+            
+            
+            
+            
+            
+            <div class="service-container">
+                <div class="sub-service"><a href="#">
+                      <h3>Personal Training</h3>
+                      <p>Receive one-on-one guidance from experienced trainers who design custom workout plans to help you achieve your goals.</p>
+                      <img src="./assets/ibm--lpa.svg" alt="">
+                </a></div>
+                <div class="sub-service"><a href="#">
+                    <h3>Group Fitness Classes</h3>
+                    <p>Join a community of like-minded individuals in classes ranging from yoga to high-intensity interval training (HIIT).                    </p>
+                    <img src="./assets/group.svg" alt="">
+                </a></div>
+                <div class="sub-service"><a href="#">
+                    <h3>Nutritional Guidance</h3>
+                    <p>Get tailored advice from certified nutritionists to complement your fitness journey with the right diet.</p>
+                    <img src="./assets/ibm--lpa.svg" alt="">
+                </a></div>
+                <div class="sub-service"><a href="#">
+                    <h3>State-of-the-Art Equipment</h3>
+                    <p>Access the latest fitness equipment designed to enhance your workout and maximize results.</p>
+                    <img src="./assets/ibm--instana.svg" alt="">
+                </a></div>
+                <div class="sub-service"><a href="#">
+                    <h3>Wellness Programs</h3>
+                    <p>Enjoy holistic programs that include stress management, flexibility training, and recovery sessions to support your overall well-being.</p>
+                    <img src="./assets/apple.svg" alt="">
+                </a></div>
+                <div class="sub-service"><a href="#">
+                    <h3>Membership Perks</h3>
+                    <p>ake advantage of exclusive perks such as fitness challenges, workshops, and discounts on premium services.                    </p>
+                    <img src="./assets/ibm--bluepay.svg" alt="">
+                </a></div>
+            </div>
+        </section
+    </main>
+
+
+    <script defer src="./scripts/script.js"></script>
 </body>
 </html>

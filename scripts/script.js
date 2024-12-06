@@ -1,8 +1,10 @@
-// Select the hamburger and navigation elements
-const hamburger = document.querySelector('.hamburger');
-const navigation = document.querySelector('.navigation');
+const showSidebar = () => {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex';
+}
 
-// Toggle 'active' class on the navigation menu when the hamburger is clicked
-hamburger.addEventListener('click', () => {
-    navigation.classList.toggle('active');
-});
+const hideSidebar = () => {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none';
+}
+

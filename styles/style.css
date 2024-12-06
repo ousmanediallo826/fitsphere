@@ -6,134 +6,392 @@
     box-sizing: border-box;
 }
 body {
- font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #004144;
-  
- 
-   
-
+    min-height: 100vh;
+    background-color: #000000; 
 }
-
 .container {
-    margin: 0 100px;
+    
+}
+nav {
+    
+    
+    padding: 50px 20px;
+  
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #9ef0f0;
+    font-size: 24px;
 }
 
+nav a:hover {
+   
+}
 
-.hamburger {
+nav li:first-child {
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #a7b5b68a;
+    box-shadow: -10px 0 10px rgba(0, 0,0, 0.1);
+    backdrop-filter: blur(10px);
     display: none;
     flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #bae6ff;
-    border-radius: 5px;
-}
-C
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #bae6ff;
-    border-radius: 5px;
-}
-
-C
-.navigation ul,
-.button {
+ .hidde {
     display: none;
 }
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.logIn a, .signUp  a{
+    padding: 10px 30px;
+    
+    margin: 0 10px;
+    border-radius: 20px;
+    color: white;
+}
+.logIn a {
+    background-color: #BE95FF;
+}
+.signUp a {
+    background-color: #FF7EB6;
+}
 
-
-@media screen and (min-width: 768px) {
-    .navigation ul,
-    .button {
-        display: flex;
-    }
-    .hamburger {
+@media (max-width: 880px){
+    .hiddeMobile {
         display: none;
     }
-    .header {
-        position: fixed;
-        top: 0;
-        padding: 2rem 9%;
-        left: 0;
-       
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-    
+    .hidde {
+        display: block;
+    }
+    .logIn a, .signUp  a{
+        padding: 10px 30px;
         
+        margin: 20px 10px;
+        border-radius: 20px;
+        color: white;
     }
-    .logo {
-        font-size: 30px;
-        text-decoration: none;
-        font-weight: 900;
-        color: #bae6ff;
-    }
-    .logo span {
-        color: #c1c7cd;
-        transform: rotate(-10deg);
-        display: inline-block;
-    
-    }
-    
-    .navigation ul , .button{
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-        list-style: none;
-    }
-    .navigation a {
-        text-decoration: none;
-        font-size: 24px;
-        color: #bae6ff;
-    }
-    .button button {
-        padding: 10px 40px;
-        border-radius: 15px;
-        cursor: pointer;
-        font-weight: 700;
-        border: none;
-        color: #ffff;
-    }
-    .btn1 {
-        background-color: #FF7EB6;
-    }
-    .bt2 {
+    .logIn a {
         background-color: #BE95FF;
     }
+    .signUp a {
+        background-color: #FF7EB6;
+    }
+    
 }
-@media screen and (max-width: 768px) {
-    .header {
-        padding: 1rem 5%;
-        flex-wrap: wrap;
+@media screen  and (max-width: 430px){
+    .sidebar {
+        width: 100%;
+        margin: 20px;
     }
-    .logo {
-        font-size: 24px;
+    .logIn a, .signUp  a{
+        padding: 10px 30px;
+        
+        margin: 20px 10px;
+        
+        border-radius: 20px;
+        color: white;
     }
-    .hamburger {
-        display: flex;
+    .show, .hidde {
+        fill: #9ef0f0;
     }
-    .navigation ul {
-        display: none;
+    .logIn a {
+        background-color: #BE95FF;
+        
     }
-    .button {
-        display: none;
+    .signUp a {
+        background-color: #FF7EB6;
     }
 }
+
+
+/*home page styling*/
+
+
+.slider-wrapper .slider-item {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-wrapper .slider-item::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/slider2.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+
+  
+}
+
+.slider-wrapper .slider-item .slider-content {
+    color: #ffff;
+    z-index: 20;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 10px;
+    max-width: 1400px;
+    position: relative;
+    margin-bottom: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-item .slider-content .slide-subtitle {
+    font-size: 4rem;
+    font-weight: normal;
+    margin-bottom: 60px;
+    
+}
+.slider-item .slider-content .slide-subtitle span {
+    color: #9ef0f0;
+}
+.slider-item .slider-content .slide-title {
+    font-size: 2.5rem ;
+    font-weight: 700;
+    margin-top: 5px;
+    text-transform: uppercase;
+
+}
+
+.slider-item .slider-content .slide-description {
+    margin-top: 25px;
+    line-height: 35px;
+    font-size: 2rem;
+} 
+
+.slider-item .slider-content .slide-button {
+    color: #ffff;
+    width: 150px;
+    padding: 13px 0; 
+    display: block;
+    margin-top: 45px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #BE95FF;
+    transition: all 0.5s ease-in;
+}
+.slider-item .slider-content .slide-button:hover {
+    border: 2px solid #FF7EB6;
+    background-color: #FF7EB6;
+
+}
+
+/*-------------About Me Section__________*/
+
+.about-container {
+    display: flex;
+    padding: 50px;
+    color: #ffff;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between flex items */
+}
+
+.about-sub {
+    width: 45%; /* Set a default width for larger screens */
+    text-align: center; /* Center text for smaller screens */
+}
+
+.about-sub img {
+    max-width: 100%; /* Ensures image scales with container */
+    height: auto; /* Maintain image aspect ratio */
+}
+
+.about-sub h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.about-sub .about-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: start;
+    font-size: 1.5rem;
+}
+.about-sub span {
+    color: #9ef0f0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 30px;
+    }
+
+    .about-sub {
+        width: 100%; /* Take full width */
+    }
+
+    .about-sub h2 {
+        font-size: 2rem;
+    }
+
+    .about-sub .about-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-sub h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-sub .about-description {
+        font-size: 0.9rem;
+    }
+}
+
+/*--------------Service Style--------------*/
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adds spacing betwen the cards */
+}
+
+.sub-service {
+    background-color: #f4f4f4; /* Card background color */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative; /* To control the positioning of child elements */
+    transition: background-color 0.3s ease-in-out; /* Smooth background color change */
+    overflow: hidden; /* Hide overflow when content is outside the card */
+    height: 300px; /* Set a fixed height for the cards */
+   
+}
+
+.sub-service:hover {
+    background-color: #BE95FF; /* Change background color on hover */
+}
+
+.sub-service h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.sub-service p {
+    display: none; /* Hide paragraph by default */
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; /* Control the width of the text */
+}
+
+.sub-service:hover p {
+    display: block; /* Show paragraph when the card is hovered */
+}
+
+.sub-service img {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    bottom: 10px; /* Position the image at the bottom */
+    left: 10%;
+    transform: translateX(-50%);
+    
+}
+
+/* Adjust grid layout for smaller screens */
+@media (max-width: 768px) {
+    .service-container {
+        grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-container {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
