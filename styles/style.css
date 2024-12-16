@@ -196,7 +196,7 @@ nav li:first-child {
     font-size: 2rem;
 } 
 
-.slider-item .slider-content .slide-button {
+.slider-item .slider-content .slide-button, .slide-button {
     color: #ffff;
     width: 150px;
     padding: 13px 0; 
@@ -211,7 +211,7 @@ nav li:first-child {
     border: 2px solid #BE95FF;
     transition: all 0.5s ease-in;
 }
-.slider-item .slider-content .slide-button:hover {
+.slider-item .slider-content .slide-button:hover, .slide-button:hover {
     border: 2px solid #FF7EB6;
     background-color: #FF7EB6;
 
@@ -223,20 +223,20 @@ nav li:first-child {
     display: flex;
     padding: 50px;
     color: #ffff;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Adds spacing between flex items */
+    gap: 20px; 
 }
 
 .about-sub {
-    width: 45%; /* Set a default width for larger screens */
-    text-align: center; /* Center text for smaller screens */
+    width: 45%; 
+    text-align: center;
 }
 
 .about-sub img {
-    max-width: 100%; /* Ensures image scales with container */
-    height: auto; /* Maintain image aspect ratio */
+    max-width: 100%;
+    height: auto; 
 }
 
 .about-sub h2 {
@@ -257,12 +257,12 @@ nav li:first-child {
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         padding: 30px;
     }
 
     .about-sub {
-        width: 100%; /* Take full width */
+        width: 100%;
     }
 
     .about-sub h2 {
@@ -293,22 +293,23 @@ nav li:first-child {
 .service-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Adds spacing betwen the cards */
+    gap: 20px;
+    margin: 30px 60px;
 }
 
 .sub-service {
-    background-color: #f4f4f4; /* Card background color */
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
-    position: relative; /* To control the positioning of child elements */
-    transition: background-color 0.3s ease-in-out; /* Smooth background color change */
-    overflow: hidden; /* Hide overflow when content is outside the card */
-    height: 300px; /* Set a fixed height for the cards */
+    position: relative;
+    transition: background-color 0.3s ease-in-out; 
+    overflow: hidden; 
+    height: 300px; 
    
 }
 
 .sub-service:hover {
-    background-color: #BE95FF; /* Change background color on hover */
+    background-color: #BE95FF;
 }
 
 .sub-service h3 {
@@ -319,7 +320,7 @@ nav li:first-child {
 }
 
 .sub-service p {
-    display: none; /* Hide paragraph by default */
+    display: none;
     color: #fff;
     font-size: 1rem;
     position: absolute;
@@ -327,34 +328,185 @@ nav li:first-child {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 80%; /* Control the width of the text */
+    width: 80%; 
 }
 
 .sub-service:hover p {
-    display: block; /* Show paragraph when the card is hovered */
+    display: block;
+    font-size: 1.9rem;
 }
-
+.title-service {
+    font-size: 4rem;
+    color: #ffff;
+    text-align: center;
+}
+.subtitle-service {
+    font-size: 2rem;
+    color: #ffff;
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .sub-service img {
     width: 70px;
     height: auto;
     position: absolute;
-    bottom: 10px; /* Position the image at the bottom */
+    bottom: 10px; 
     left: 10%;
     transform: translateX(-50%);
     
 }
 
-/* Adjust grid layout for smaller screens */
+
 @media (max-width: 768px) {
     .service-container {
-        grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 480px) {
     .service-container {
-        grid-template-columns: 1fr; /* Single column for very small screens */
+        grid-template-columns: 1fr;
     }
+}
+
+/* -------------membership form ------------------*/
+
+#membership {
+   color: #ffff;
+    margin-top: 100px;
+    text-align: center;
+}
+.h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+
+}
+#membership p {
+    font-size: 24px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+.membership-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+
+    margin: 40px 40px;
+    padding: 20px 0;
+}
+.sub-membership {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 100px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    margin-top: 100px;
+    
+    
+}
+.sub-membership:hover {
+    transform: scale3d(1.3, 1.3, 1.3);
+
+    transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+    .membership-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .membership-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.elite {
+    background-color: #BE95FF;
+}
+.elite a {
+    background-color: #9ef0f0;
+}
+.membership-container ul {
+    list-style: none;
+}
+.sub-membership h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.sub-membership h1 {
+    font-size: 50px;
+    color: #BE95FF;
+}
+.sub-membership ul li {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.sub-membership ul {
+    margin-bottom: 40px;
+}
+.sub-membership a {
+    background-color: #BE95FF;
+    padding: 15px 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Testimonials--------------*/
+
+h2.title {
+    font-size: 50px;
+    margin: 32px 0px;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+h2.title::after {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 4px;
+    background-color: #BE95FF;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.testimonial-container {
+    display: flex;
+    gap: 32px; /* Spacing between child cards */
+    max-width: 1200px; /* Limits container width */
+    margin-inline: auto; /* Centers the container horizontally */
+    height: 500px; /* Keeps a fixed height for uniformity */
+    width: 100%; /* Ensures container spans full width */
+    padding: 20px; /* Adds some padding inside the container */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+.card {
+    flex: 1; /* Cards grow to occupy available space equally */
+    max-width: calc(33.33% - 32px); /* Ensure 3 cards per row with gaps */
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
 }
 
 
@@ -364,8 +516,10 @@ nav li:first-child {
 
 
 
-
-
+.profile img {
+    width: 50px;
+    border-radius: 50%;
+}
 
 
 
