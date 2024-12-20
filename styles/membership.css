@@ -94,13 +94,13 @@ body {
     gap: 5px; 
     font-size: 1rem; 
     color: #ffffff; 
-    cursor: pointer; /* Make the label clickable */
+    cursor: pointer;
 }
 
 .checkbox-group input[type="checkbox"] {
     width: 18px; /* Size of the checkbox */
     height: 18px;
-    accent-color: #6a11cb; /* Modern checkbox styling */
+    accent-color: #6a11cb; 
 }
 
 
@@ -134,7 +134,7 @@ body {
         padding: 12px;
     }
     .checkbox-group {
-        gap: 15px; /* Adjust gap for smaller screens */
+        gap: 15px; 
     }
 }
 

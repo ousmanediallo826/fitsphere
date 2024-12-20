@@ -6,13 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #212121; /* Dark background for contrast */
-    color: #fff; /* White text for readability */
+    background-color: #212121; 
+    color: #fff; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    transition: background-color 0.3s ease; /* Smooth transition on background change */
+    transition: background-color 0.3s ease;
 }
 
 .dashboard {
@@ -22,28 +22,28 @@ body {
     max-width: 1200px;
     width: 100%;
     padding: 20px;
-    background-color: #121212; /* Dark theme background */
+    background-color: #121212;
     border-radius: 8px;
     opacity: 0;
-    animation: fadeIn 1s forwards; /* Fade-in animation */
+    animation: fadeIn 1s forwards; 
 }
 
 .dashboard-item {
-    background-color: #1e1e1e; /* Slightly lighter dark background for items */
+    background-color: #1e1e1e; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     color: #fff;
-    transform: translateY(20px); /* Start from below */
+    transform: translateY(20px); 
     opacity: 0;
-    animation: slideUp 0.5s forwards; /* Slide-up animation */
-    animation-delay: 0.3s; /* Delay to stagger the items */
+    animation: slideUp 0.5s forwards; 
+    animation-delay: 0.3s;
 }
 
 h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #bb86fc; /* Purple color for headings */
+    color: #bb86fc; 
     opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 0.5s;
@@ -61,36 +61,36 @@ form {
 label {
     margin-bottom: 8px;
     font-weight: bold;
-    color: #bb86fc; /* Purple label text */
+    color: #bb86fc; 
 }
 
 input, button {
     padding: 8px;
     margin-bottom: 12px;
     font-size: 1rem;
-    border: 1px solid #3f51b5; /* Blue border for inputs */
+    border: 1px solid #3f51b5; 
     border-radius: 4px;
-    background-color: #303030; /* Dark input background */
-    color: #fff; /* White text in inputs */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    background-color: #303030; 
+    color: #fff; 
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
 }
 
 input:focus, button:focus {
-    background-color: #424242; /* Darker background on focus */
-    border-color: #6200ea; /* Purple border on focus */
+    background-color: #424242;
+    border-color: #6200ea;
 }
 
 button {
-    background-color: #6200ea; /* Purple background for buttons */
+    background-color: #6200ea;
     color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #3700b3; /* Darker purple on hover */
+    background-color: #3700b3;
 }
 
 .progress-bar {
@@ -102,9 +102,9 @@ button:hover {
 
 .progress {
     height: 100%;
-    background-color: #6200ea; /* Purple progress bar */
+    background-color: #6200ea; 
     border-radius: 10px;
-    animation: fillBar 2s ease-in-out forwards; /* Animation for progress bar */
+    animation: fillBar 2s ease-in-out forwards; 
 }
 
 .metrics-chart {
@@ -116,15 +116,15 @@ button:hover {
 .bar {
     width: 100%;
     height: 20px;
-    background-color: #3f51b5; /* Blue background for bars */
+    background-color: #3f51b5; 
     border-radius: 10px;
-    animation: fillBar 2s ease-in-out forwards; /* Bar animation */
+    animation: fillBar 2s ease-in-out forwards; 
 }
 
 .countdown-timer {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #bb86fc; /* Purple text for countdown timer */
+    color: #bb86fc;
 }
 
 ul {
@@ -134,7 +134,7 @@ ul {
 
 li {
     padding: 8px;
-    background-color: #333; /* Dark background for list items */
+    background-color: #333;
     margin-bottom: 8px;
     border-radius: 4px;
     opacity: 0;

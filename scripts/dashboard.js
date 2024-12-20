@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Clear all form inputs on page load
+   
     const clearFormInputs = (formId) => {
         const form = document.getElementById(formId);
         if (form) {
@@ -8,32 +8,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Comment out for debugging
-    // clearFormInputs("membershipForm");
+    
+    
 
-    // Restrict card number to 16 digits
+    
     const cardInput = document.getElementById('card');
     cardInput.addEventListener('input', (e) => {
         if (cardInput.value.length > 16) {
-            cardInput.value = cardInput.value.slice(0, 16); // Trim input to 16 digits
+            cardInput.value = cardInput.value.slice(0, 16); 
         }
     });
 
     document.getElementById("registerButton").addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent default behavior
+        e.preventDefault();
 
         const form = document.getElementById("membershipForm");
         const inputs = form.querySelectorAll("input, select");
         let allFilled = true;
 
-        // Log input values
+      
         inputs.forEach(input => {
             console.log(`${input.id}: ${input.value}`);
             if (!input.value.trim()) {
                 allFilled = false;
-                input.style.border = "2px solid red"; // Highlight empty fields
+                input.style.border = "2px solid red"; 
             } else {
-                input.style.border = ""; // Reset border for filled fields
+                input.style.border = "";
             }
         });
 
@@ -41,14 +41,21 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Please fill in all required fields.");
             return;
         }
+        
+        document.getElementById("displayName").textContent = document.getElementById('fname').value.trim() + " " + document.getElementById('lname').value.trim();
+        document.getElementById("displayEmail").textContent = document.getElementById('email').value.trim();
+        document.getElementById("displayPhone").textContent = document.getElementById('phone').value.trim();
+        document.getElementById("displayDOB").textContent = document.getElementById('dob').value.trim();
 
         // Payment Validation
         const cardHolder = document.getElementById('cardHolder').value.trim();
         const cardNumber = document.getElementById('card').value.trim();
         const expireDate = document.getElementById('expire').value;
         const cvv = document.getElementById('cvv').value.trim();
-        const phoneNumber = document.getElementById('phone').value.trim(); // Assuming phone field ID is "phone"
+        const phoneNumber = document.getElementById('phone').value.trim(); 
+         
 
+     
         console.log('Card Holder:', cardHolder);
         console.log('Card Number:', cardNumber);
         console.log('Expiration Date:', expireDate);
@@ -85,6 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         alert("Payment information is valid! Redirecting to the dashboard...");
-        window.location.href = "dashboard.html";
+        window.location.href = "../dashboard.html";
     });
 });
