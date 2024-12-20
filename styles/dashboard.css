@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease; /* Smooth transition on background change */
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #121212; /* Dark theme background */
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+.dashboard-item {
+    background-color: #1e1e1e; /* Slightly lighter dark background for items */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+    transform: translateY(20px); /* Start from below */
+    opacity: 0;
+    animation: slideUp 0.5s forwards; /* Slide-up animation */
+    animation-delay: 0.3s; /* Delay to stagger the items */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #bb86fc; /* Purple color for headings */
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.7s;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #bb86fc; /* Purple label text */
+}
+
+input, button {
+    padding: 8px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    border: 1px solid #3f51b5; /* Blue border for inputs */
+    border-radius: 4px;
+    background-color: #303030; /* Dark input background */
+    color: #fff; /* White text in inputs */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+input:focus, button:focus {
+    background-color: #424242; /* Darker background on focus */
+    border-color: #6200ea; /* Purple border on focus */
+}
+
+button {
+    background-color: #6200ea; /* Purple background for buttons */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #6200ea; /* Purple progress bar */
+    border-radius: 10px;
+    animation: fillBar 2s ease-in-out forwards; /* Animation for progress bar */
+}
+
+.metrics-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bar {
+    width: 100%;
+    height: 20px;
+    background-color: #3f51b5; /* Blue background for bars */
+    border-radius: 10px;
+    animation: fillBar 2s ease-in-out forwards; /* Bar animation */
+}
+
+.countdown-timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #bb86fc; /* Purple text for countdown timer */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 8px;
+    background-color: #333; /* Dark background for list items */
+    margin-bottom: 8px;
+    border-radius: 4px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fillBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

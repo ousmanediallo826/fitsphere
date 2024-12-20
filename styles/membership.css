@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parkinsans:wght@300..800&family=Playwrite+AU+SA+Guides&family=Playwrite+ES+Deco+Guides&family=SUSE:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url('../assets/profile/background.png');
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.membership-container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.membership-container h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ffffff;
+    color: #2575fc;
+    font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form input:focus {
+    border-color: #ffffff;
+}
+
+.form button {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+.checkbox-group {
+    display: flex;
+    gap: 20px; 
+    align-items: center; 
+    margin-left: 10vh;
+}
+.form figcaption {
+    font-size: 30px;
+    color: #6a11cb;
+}
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    font-size: 1rem; 
+    color: #ffffff; 
+    cursor: pointer; /* Make the label clickable */
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px; /* Size of the checkbox */
+    height: 18px;
+    accent-color: #6a11cb; /* Modern checkbox styling */
+}
+
+
+.form button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+.form figcaption {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .membership-container {
+        padding: 30px 20px;
+    }
+
+    .membership-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .form input {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .form button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+    .checkbox-group {
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .membership-container {
+        padding: 20px 15px;
+    }
+
+    .membership-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .form input {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .form button {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    .checkbox-group {
+        gap: 10px;
+        margin-right: 100px !important;
+
+    }
+}

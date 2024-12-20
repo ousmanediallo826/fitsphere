@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Dashboard</title>
+  <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- User Info Section -->
+    <div class="dashboard-item user-info">
+      <h2>User Info</h2>
+      <div id="userInfoDisplay" class="info">
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+      </div>
+    </div>
+  
+    <!-- Goals Progress Section -->
+    <div class="dashboard-item goals">
+      <h2>Your Goal</h2>
+      <form id="goalForm">
+        <label for="goalDescription">Goal Description:</label>
+        <input type="text" id="goalDescription" name="goalDescription" placeholder="Describe your goal">
+        <label for="goalProgress">Goal Progress (in %):</label>
+        <input type="number" id="goalProgress" name="goalProgress" min="0" max="100" placeholder="Progress %">
+        <button type="submit">Update Goal</button>
+      </form>
+      <div id="goalDisplay" class="goal-progress" style="display: none;">
+        <p><strong>Goal:</strong> <span id="goalText"></span></p>
+        <div class="progress-bar">
+          <div id="progressBar" class="progress"></div>
+        </div>
+        <p><span id="goalPercentage">0</span>% Complete</p>
+      </div>
+    </div>
+  
+    <!-- Metrics Section -->
+    <div class="dashboard-item metrics">
+      <h2>Metrics</h2>
+      <form id="metricsForm">
+        <label for="metric1">Metric 1 Progress (in %):</label>
+        <input type="number" id="metric1" name="metric1" min="0" max="100" placeholder="Progress %">
+        <label for="metric2">Metric 2 Progress (in %):</label>
+        <input type="number" id="metric2" name="metric2" min="0" max="100" placeholder="Progress %">
+        <label for="metric3">Metric 3 Progress (in %):</label>
+        <input type="number" id="metric3" name="metric3" min="0" max="100" placeholder="Progress %">
+        <button type="submit">Update Metrics</button>
+      </form>
+      <div id="metricsDisplay" class="metrics-chart" style="display: none;">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+      </div>
+    </div>
+  
+    <!-- Countdown Timer -->
+    <div class="dashboard-item countdown">
+      <h2>Time Left to Achieve Goal</h2>
+      <form id="countdownForm">
+        <label for="timeLeft">Time Left (days):</label>
+        <input type="number" id="timeLeft" name="timeLeft" min="0" placeholder="Enter time left in days">
+        <button type="submit">Set Countdown</button>
+      </form>
+      <p id="countdownDisplay" class="countdown-timer">Set your countdown</p>
+    </div>
+  
+    <!-- Upcoming Classes -->
+    <div class="dashboard-item upcoming-classes">
+      <h2>Upcoming Classes</h2>
+      <form id="classesForm">
+        <label for="className">Class Name:</label>
+        <input type="text" id="className" name="className" placeholder="Enter class name">
+        <label for="classDate">Class Date:</label>
+    <input type="date" id="classDate" name="classDate">
+        <label for="classTime">Class Time:</label>
+        <input type="time" id="classTime" name="classTime">
+        <button type="submit">Add Class</button>
+      </form>
+      <ul id="classesList">
+        <!-- Dynamic class list will appear here -->
+      </ul>
+    </div>
+  </div>
+  
+  <script src="./scripts/dashboard.js" defer></script>
+</body>
+</html>

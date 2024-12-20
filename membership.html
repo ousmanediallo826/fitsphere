@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+    <link rel="stylesheet" href="./styles/membership.css">
+</head>
+<body>
+    <div class="membership-container">
+        <h1>FitSphere Membership Form</h1>
+
+        <form action="" class="form" id="membershipForm">
+            <figcaption>Customer Details:</figcaption>
+            <caption>First name</caption>
+            <input type="text" id="fname" name="fname">
+            <caption>Last name</caption>
+            <input type="text" id="lname" name="lname">
+            <br>
+            <caption>Date of birth</caption>
+            <input type="date" id="dob" name="dob">
+            <caption>Email address</caption>
+            <input type="email" name="email" id="email">
+            <br>
+            <caption>Phone number</caption>
+            <input type="number" name="phone" id="phone">
+            
+            <figcaption>Best Time To Call:</figcaption>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" />
+                    <span>Morning</span>
+                </label>
+                <label>
+                    <input type="checkbox" />
+                    <span>Afternoon</span>
+                </label>
+                <label>
+                    <input type="checkbox" />
+                    <span>Evening</span>
+                </label>
+            </div>
+
+            <figcaption>Emergency Contact:</figcaption>
+            <caption>First name</caption>
+            <input type="text" id="ec_fname" name="ec_fname">
+            <caption>Last name</caption>
+            <input type="text" id="ec_lname" name="ec_lname">
+            <br>
+            <caption>Phone Number</caption>
+            <input type="number" id="ec_phone">
+            <caption>Relationship</caption><br>
+            <input type="text" name="relationship" id="relationship">
+            <br>
+            <figcaption>Payment Method:</figcaption>
+
+<label for="card">Card Number:</label><br>
+<input type="number" name="card" id="card"><br>
+
+<label for="cardHolder">Card Holder:</label>
+<input type="text" name="cardHolder" id="cardHolder"><br>
+
+<label for="expire">Expire On:</label><br>
+<input type="date" id="expire"><br>
+
+<label for="cvv">CVV:</label><br>
+<input type="number" id="cvv" name="cvv"><br>
+
+            <figcaption>Choose Membership Plan:</figcaption>
+            <select id="membershipPlan" name="membershipPlan">
+                <option value="Basic">Basic</option>
+                <option value="Premium">Premium</option>
+                <option value="Gold">Gold</option>
+            </select>
+            <br>
+            <button type="button" id="registerButton">Register</button>
+        </form>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <script src="./scripts/dashboard.js"></script>
+</body>
+</html>

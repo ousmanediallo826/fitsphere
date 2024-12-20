@@ -12,23 +12,23 @@
             <li onclick=hideSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="#">FitSphere</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Memberships</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="./membership.html">Memberships</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li class="signUp"><a  href="#">Sign Up</a></li>
-            <li class="logIn"><a  href="#">Log In</a></li>
+            <li class="signUp"><a  href="./dashboard.html">Dashboard</a></li>
+            
             <
         </ul>
         <ul>
             <li><a  href="#">FitSphere</a></li>
             <li><a class="hiddeMobile"href="#">Home</a></li>
-            <li><a class="hiddeMobile"href="#">About Us</a></li>
-            <li><a class="hiddeMobile"href="#">Services</a></li>
-            <li><a class="hiddeMobile"href="#">Memberships</a></li>
+            <li><a class="hiddeMobile"href="./about.html">About Us</a></li>
+            <li><a class="hiddeMobile"href="#serices">Services</a></li>
+            <li><a class="hiddeMobile"href="./membership.html">Memberships</a></li>
             <li><a class="hiddeMobile"href="#">Contact Us</a></li>
-            <li class="signUp"><a class="hiddeMobile "href="#">Sign Up</a></li>
-            <li class="logIn"><a class="hiddeMobile "href="#">Log In</a></li>
+            <li class="signUp"><a class="hiddeMobile "href="./dashboard.html">Dashboard</a></li>
+
             <li class="hidde"  onclick=showSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
@@ -44,7 +44,7 @@
                         <p class="slide-description">
                             <em>Unleash your potential with state-of-the-art facilities, expert trainers, and a supportive community dedicated to your success.</em>
                         </p>
-                        <a href="" class="slide-button">learn more</a>
+                        <a href="./about.html" class="slide-button">learn more</a>
                     </div>
                 </div>
  
@@ -117,7 +117,7 @@
                     <li>Access to beginner workout plans</li>
                    
                   </ul>
-                  <a href="#" type="button">Register</a>
+                  <a href="./membership.html" type="button">Register</a>
                 </div> 
                 <div class="sub-membership elite">
                     <h2>Elite Membership</h2>
@@ -128,7 +128,7 @@
                         <li>VIP lounge access</li>
                         <li>Monthly fitness progress tracking reports</li>
                     </ul>
-                    <a href="#" type="button">Register</a>
+                    <a href="./membership.html" type="button">Register</a>
                 </div>
                 <div class="sub-membership">
                     <h2>Premium Membership</h2>
@@ -139,49 +139,77 @@
                         <li>Free nutrition consultations</li>
                         <li>Access to exclusive events</li>
                     </ul>
-                    <a href="#" type="button">Register</a>
+                    <a href="./membership.html" type="button">Register</a>
                 </div>
             </div>
         </section>
-        <section>
-            <h2 class="title">What Our Customers says</h2>
-            <div class="testimonial-container">
-                <div class="card">
-                    <div class="profile">
-                        <img src="./assets/profile/profile1.jpg" alt="Profile Picture">
-                        <div>
-                            <div class="name">Ousmane Diallo</div>
-                            <div class="role">Mainframe - Application Programmer</div>
-                        </div>
-                    </div>
-                    <div class="content">"This is a testimonial content example."</div>
+        <section class="testimonial-section">
+            <h2>What Our Clients Say</h2>
+            <div class="slider">
+              <div class="slides">
+                <div class="slide">
+                  <img src="./assets/profile/profile3.png" alt="John Doe">
+                  <p>"This platform is amazing! It has transformed the way I approach my work."</p>
+                  <h3>John Doe</h3>
+                  <span>Software Engineer</span>
                 </div>
-                <div class="card">
-                    <div class="profile">
-                        <img src="./assets/profile/profile2.jpg" alt="Profile Picture">
-                        <div>
-                            <div class="name">Ousmane Diallo</div>
-                            <div class="role">Mainframe - Application Programmer</div>
-                        </div>
-                    </div>
-                    <div class="content">"This is another testimonial content example."</div>
+                <div class="slide">
+                  <img src="./assets/profile/profile2.png" alt="Jane Smith">
+                  <p>"A seamless experience! I highly recommend it to everyone."</p>
+                  <h3>Jane Smith</h3>
+                  <span>Product Manager</span>
                 </div>
-                <div class="card">
-                    <div class="profile">
-                        <img src="./assets/profile/profile3.jpg" alt="Profile Picture">
-                        <div>
-                            <div class="name">Ousmane Diallo</div>
-                            <div class="role">Mainframe - Application Programmer</div>
-                        </div>
-                    </div>
-                    <div class="content">"This is yet another testimonial content example."</div>
+                <div class="slide">
+                  <img src="./assets/profile/profile1.jpg" alt="Sam Wilson">
+                  <p>"Great user interface and functionality. I’m truly impressed."</p>
+                  <h3>Sam Wilson</h3>
+                  <span>UI/UX Designer</span>
                 </div>
+              </div>
             </div>
-            
-        </section>
+          </section>
     </main>
-
-
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column about">
+            <h3>About Us</h3>
+            <p>We are committed to providing the best experiences for our clients with top-notch services and customer care.</p>
+          </div>
+          <div class="footer-column quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><img src="https://via.placeholder.com/24/007BFF/ffffff?text=F" alt="Facebook"></a>
+              <a href="#"><img src="https://via.placeholder.com/24/007BFF/ffffff?text=T" alt="Twitter"></a>
+              <a href="#"><img src="https://via.placeholder.com/24/007BFF/ffffff?text=I" alt="Instagram"></a>
+              <a href="#"><img src="https://via.placeholder.com/24/007BFF/ffffff?text=L" alt="LinkedIn"></a>
+            </div>
+          </div>
+          <div class="footer-column location">
+            <h3>Our Location</h3>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24220.737931171025!2d-73.924608!3d40.638873600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734668206597!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Your Company Name. All Rights Reserved.</p>
+        </div>
+      </footer>
+      
     <script defer src="./scripts/script.js"></script>
 </body>
 </html>
